@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/fav.ico">
+    <link rel="stylesheet" href="./style.css">
+    <title>Challenge Alura ONE - Encriptador de Texto</title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <a href="#" rel="">
+            <img src="./img/logo.svg" alt="Logo Alura" class="header__logo">
+        </a>
+    </header>
+
+    <!-- Principal -->
+    <main>
+        <!-- Sección de operaciones -->
+
+        <section class="operaciones">
+            <textarea class="operaciones__texto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="operaciones__aviso">
+                <img src="./img/aviso.svg" alt="Icono de un signo de exclamación como aviso"
+                    class="operaciones__aviso__imagen">
+                <p class="operaciones__aviso__texto">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="operaciones__botones">
+                <button type="submit" class="operaciones__botones__encriptar">Encriptar</button>
+                <button type="submit" class="operaciones__botones__desencriptar">Desencriptar</button>
+            </div>
+
+        </section>
+        <!-- Sección de resultados -->
+        <section class="resultado">
+            <div class="resultado__contenedor">
+                <img src="./img/muñeco.svg" alt="Ilustración de un hombre con una lupa sentado sobre sus piernas"
+                    class="resultado__contenedor__imagen">
+                <p class="resultado__contenedor__texto__uno">Ningún mensaje fue encontrado</p>
+                <p class="resultado__contenedor__texto__dos">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+
+            <textarea type="mensaje" class="resultado__evaluar" readonly></textarea>
+            <button type="submit" class="resultado__copiar">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer__texto"> Desarrollado por Jorge M. Paret</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
